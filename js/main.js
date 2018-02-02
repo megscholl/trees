@@ -24,8 +24,11 @@ document.getElementById("growTree").addEventListener("click", function(e) {
      for (var i = 1; i <= treeGrow; i += 2){
          
          var space = " ";
-         let space2 = space.repeat(pineValues.height.value - i / 2);
+         let space2 = space.repeat(pineValues.height.value - i / 2); 
          let grow = (pineValues.character.value).repeat(i);
 
     console.log(space2, grow);
 }});
+
+
+// QUESTION: WHY IS IT THAT WE MUST += 2 (line 24) , AND -i / 2 (line 27)
